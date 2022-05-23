@@ -14,7 +14,7 @@ function calculateEntry(entrants) {
   if (
     entrants.length === 0
     || entrants === undefined
-    || !entrants
+    || Object.keys(entrants).length === 0
   ) return 0;
   const quantEntrants = countEntrants(entrants);
 
