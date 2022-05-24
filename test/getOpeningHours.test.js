@@ -4,13 +4,14 @@ describe('Testes da função getOpeningHours', () => {
   it('Teste das 6 horas da tarde (6:00-PM). Faça um teste de todos os dias às 18:00 horas:', () => {
     const open = 'The zoo is open';
     const closed = 'The zoo is closed';
-    expect(getOpeningHours('Thursday', '9:00-AM')).toEqual(open);
-    expect(getOpeningHours('Wednesday', '9:00-AM')).toEqual(closed);
+    expect(getOpeningHours('Thursday', '9:00-AM')).toEqual(closed);
+    expect(getOpeningHours('Wednesday', '9:00-AM')).toEqual(open);
     expect(getOpeningHours('Tuesday', '6:00-PM')).toEqual(closed);
     expect(getOpeningHours('Friday', '6:00-PM')).toEqual(open);
     expect(getOpeningHours('Saturday', '6:00-PM')).toEqual(open);
     expect(getOpeningHours('Sunday', '6:00-PM')).toEqual(open);
     expect(getOpeningHours('Monday', '9:00-AM')).toEqual(closed);
+    expect(getOpeningHours('Saturday', '9:00-AM')).toEqual(open);
   });
   it('Teste dos Erros de Parametros:', () => {
     // testing WEEKDAY throw error
