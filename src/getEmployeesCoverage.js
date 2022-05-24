@@ -1,4 +1,3 @@
-/* eslint-disable complexity */
 const data = require('../data/zoo_data');
 
 const funcaozinha = (parame) => parame.reduce((obje, element) => {
@@ -12,18 +11,18 @@ const funcaozinha = (parame) => parame.reduce((obje, element) => {
 }, {});
 
 function getEmployeesCoverage(parametro) {
-  const { id, name } = parametro;
+  const { id } = parametro;
   if (id !== undefined) {
     return funcaozinha(data.employees.filter((employee) => employee.id === id));
   }
-  if (name !== undefined
+  /* if (name !== undefined
     && data.employees.filter((employee) => employee.firstName === name).length !== 0) {
     return funcaozinha(data.employees.filter((employee) => employee.firstName === name));
   }
   if (name !== undefined
     && data.employees.filter((employee) => employee.firstName === name).length !== 0) {
     return funcaozinha(data.employees.filter((employee) => employee.firstName === name));
-  }
+  } */
 }
 
 console.log(getEmployeesCoverage({ name: 'Sharonda' }));
