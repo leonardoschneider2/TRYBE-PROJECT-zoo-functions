@@ -11,12 +11,4 @@ function getAnimalsOlderThan(animal, age) {
   // result === undefined ? true : false;
 }
 
-console.log(getAnimalsOlderThan('lions', 7)); // true
-
-console.log(getAnimalsOlderThan('lions', 8)); // false
-
-console.log(getAnimalsOlderThan('bears', 4)); // true
-
-console.log(getAnimalsOlderThan('bears', 5)); // false
-
 module.exports = getAnimalsOlderThan;

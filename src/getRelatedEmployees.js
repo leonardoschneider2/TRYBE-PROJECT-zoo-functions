@@ -18,7 +18,7 @@ function getRelatedEmployees(managerId) {
     empregados = empregados.map((Obj) => `${Obj.firstName} ${Obj.lastName}`);
     return empregados;
   }
-  return manager;
+  throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
 }
 
 module.exports = { isManager, getRelatedEmployees };

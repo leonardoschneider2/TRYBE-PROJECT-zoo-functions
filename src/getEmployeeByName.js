@@ -11,12 +11,4 @@ function getEmployeeByName(name) {
   return result;
 }
 
-console.log(getEmployeeByName('Burl'), 1);
-
-console.log(getEmployeeByName('Bethea'), 2);
-
-console.log(getEmployeeByName('Wilburn'), 3);
-
-console.log(getEmployeeByName(), 4);
-
 module.exports = getEmployeeByName;
