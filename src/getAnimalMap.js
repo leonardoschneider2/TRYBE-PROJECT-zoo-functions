@@ -71,7 +71,7 @@ const getAnimalAndNames = (location, sex, sorted) => {
   }
   // else
   return location.reduce((acc, region) =>
-      ({ ...acc, [region]: noSortNoSex(region, sex) }), {});
+    ({ ...acc, [region]: noSortNoSex(region, sex) }), {});
 };
 
 // Função Raiz da Questão
